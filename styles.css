@@ -1,30 +1,64 @@
 body {
-    font-family: Arial, sans-serif;
-    line-height: 1.6;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     margin: 0;
     padding: 0;
-    color: #ff8181;
-    background-color: #f4f4f4;
+    color: #333;
+    background-color: #eaeaea;
 }
 
-header, section, footer {
-    margin: 20px;
+.container {
+    max-width: 960px;
+    margin: 20px auto;
+    background: white;
+    box-shadow: 0 0 10px rgba(0,0,0,0.1);
     padding: 20px;
-    background: #fff;
-    border: 1px solid #ccc;
+}
+
+header, main, footer {
+    padding: 20px;
+    text-align: center;
+}
+
+header {
+    background-color: #007BFF;
+    color: white;
 }
 
 header h1, header p {
     margin: 0;
-    text-align: center;
 }
 
-img {
-    max-width: 100%;
+main {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+.about-me, .my-projects {
+    flex: 1 1 300px;
+    margin: 20px;
+}
+
+.about-me img, .project img {
+    width: 100%;
     height: auto;
+    border-radius: 10px;
+}
+
+.project {
+    display: flex;
+    margin-bottom: 20px;
+    background: #f0f0f0;
+    border-radius: 10px;
+}
+
+.project div {
+    padding: 20px;
 }
 
 footer {
-    text-align: center;
+    background-color: #333;
+    color: white;
     font-size: 0.8em;
+    text-align: center;
 }
