@@ -3,37 +3,40 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Über Mich - Kevin Böhning</title>
+    <title>Fussels Game Community</title>
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-    <div class="container">
-        <header>
-            <h1>Willkommen auf meiner persönlichen Webseite!</h1>
-            <p>Hier erfahren Sie mehr über meine Interessen und Projekte.</p>
-        </header>
-        <main>
-            <section class="about-me">
-                <h2>Über Mich</h2>
-                <p>Ich bin Kevin Böhning, ein Softwareentwickler mit einer Leidenschaft für neue Technologien und Datenanalyse. In meiner Freizeit fotografiere ich gerne und erkunde die Natur.</p>
-                <img src="World-of-Tanks-titel-01.jpg" alt="Ein Foto von mir">
-            </section>
-            <section class="my-projects">
-                <h2>Projekte</h2>
-                <p>Hier sind einige meiner letzten Projekte, die ich entwickelt habe oder an denen ich beteiligt war. Weitere Informationen finden Sie auf meinem GitHub-Profil.</p>
-                <!-- www.fussels-game-community.de -->
-                <div class="project">
-                    <img src="project1.jpg" alt="Projekt 1">
-                    <div>
-                        <h3>www.fussels-game-community.de</h3>
-                        <p>Dieses Projekt bezieht sich auf eine Game Community wo sich leute zum gemeinsamen spielen treffen können.</p>
-                    </div>
-                </div>
-            </section>
-        </main>
-        <footer>
-            <p>Kontakt: <a href="mailto:ihre-email@example.com">ke.boehning@icloud.com</a></p>
-        </footer>
-    </div>
+    <header>
+        <h1>Fussels Game Community</h1>
+        <nav>
+            <ul>
+                <li><a href="#home">Startseite</a></li>
+                <li><a href="#news">Neuigkeiten</a></li>
+                <li><a href="#contact">Kontakt</a></li>
+            </ul>
+        </nav>
+    </header>
+    <section id="home">
+        <h2>Willkommen bei Fussels Game Community!</h2>
+        <p>Hier findest du alle Infos zu deinen Lieblingsspielen und kannst dich mit anderen Fans austauschen!</p>
+    </section>
+    <section id="news">
+        <h2>Neuigkeiten</h2>
+        <p>Neueste Updates und Nachrichten aus der Welt der Spiele.</p>
+    </section>
+    <section id="contact">
+        <h2>Kontakt</h2>
+        <form>
+            <label for="name">Name:</label>
+            <input type="text" id="name" name="name">
+            <label for="email">E-Mail:</label>
+            <input type="email" id="email" name="email">
+            <input type="submit" value="Senden">
+        </form>
+    </section>
+    <footer>
+        <p>© 2024 Fussels Game Community</p>
+    </footer>
 </body>
 </html>
