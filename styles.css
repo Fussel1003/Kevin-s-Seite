@@ -1,12 +1,24 @@
+/* Grundlegende Stilsetzungen */
 body {
-    font-family: Arial, sans-serif;
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    background-color: #e8eff1; /* Hintergrundfarbe der gesamten Seite */
 }
 
-header, footer {
-    background-color: #333;
-    color: white;
+header {
+    background-color: #005f73; /* Dunkelblaue Kopfzeile */
+    color: #ffffff;
+    padding: 1em 0;
     text-align: center;
-    padding: 1em;
+}
+
+footer {
+    background-color: #002e41; /* Noch dunklerer Blauton für den Fußbereich */
+    color: #ffffff;
+    text-align: center;
+    padding: 1em 0;
 }
 
 nav ul {
@@ -16,21 +28,48 @@ nav ul {
 
 nav ul li {
     display: inline;
-    margin-right: 10px;
+    margin-right: 20px;
 }
 
 nav ul li a {
-    color: white;
+    color: #ffffff;
     text-decoration: none;
+    font-weight: bold; /* Macht den Text fett */
 }
 
+/* Stilsetzungen für die Hauptbereiche */
 section {
     margin: 20px;
     padding: 20px;
-    background-color: #f4f4f4;
+    background-color: #ffffff; /* Weißer Hintergrund für die Inhaltsbereiche */
+    border-radius: 8px; /* Runde Ecken */
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Leichter Schatten für Tiefe */
+}
+
+form {
+    background-color: #f0f4f8; /* Leichter blauer Hintergrund für das Formular */
+    padding: 20px;
+    border-radius: 8px;
 }
 
 form input[type="text"], form input[type="email"], form input[type="submit"] {
     display: block;
+    width: 100%; /* Volle Breite innerhalb des Formulars */
+    padding: 10px;
     margin-top: 10px;
+    border: 2px solid #005f73; /* Border color matched to header */
+    border-radius: 4px; /* Runde Ecken für die Eingabefelder */
+}
+
+form input[type="submit"] {
+    background-color: #005f73;
+    color: white;
+    cursor: pointer; /* Zeigt einen Zeiger, um die Klickbarkeit anzuzeigen */
+}
+
+/* Responsive Gestaltung für Bilder */
+img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 8px; /* Runde Ecken für Bilder */
 }
