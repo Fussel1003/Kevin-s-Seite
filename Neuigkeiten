@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Neuigkeiten | Fussels Game Community</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <h1>Neuigkeiten bei Fussels Game Community</h1>
+        <nav>
+            <ul>
+                <li><a href="index.html">Zurück zur Hauptseite</a></li>
+            </ul>
+        </nav>
+    </header>
+    <section>
+        <h2>Neueste Updates und Nachrichten aus der Welt der Spiele</h2>
+        <p>Entdecke die spannendsten Neuigkeiten aus der Gaming-Welt. Bleibe auf dem Laufenden mit den letzten Spielveröffentlichungen, Updates und exklusiven Events!</p>
+        <img src="news-image.jpg" alt="Gaming News" style="width:100%; height:auto;">
+    </section>
+    <footer>
+        <p>© 2024 Fussels Game Community</p>
+    </footer>
+</body>
+</html>
