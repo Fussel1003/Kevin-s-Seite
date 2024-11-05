@@ -1,0 +1,23 @@
+stages:
+  - build
+  - deploy
+
+build-job:
+  stage: build
+  script:
+    - npm install
+    - npm run build
+  artifacts:
+    paths:
+      - build/
+  tags:
+    - shared-runner  # Ändere dies auf den Namen deines Standard-Runners, falls nötig
+
+deploy-job:
+  stage: deploy
+  script:
+    - aws s3 sync build/ s3://kevs-react-app-bucket --delete
+  dependencies:
+    - build-job
+  tags:
+    - ec2-runner  # Dies ist der Tag für deinen EC2-Runner
