@@ -1,0 +1,47 @@
+/* Allgemeines Layout */
+body {
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Navigation und Header */
+header {
+    background-color: #333;
+    color: white;
+    padding: 1em;
+}
+
+#main-title { /* Spezifisches Styling für die ID main-title */
+    margin: 0;
+    padding: 0;
+}
+
+.nav-item a { /* Spezifisches Styling für die Klasse nav-item */
+    color: white;
+    text-decoration: none;
+    padding: 5px 10px;
+}
+
+.nav-item a:hover { /* Hover-Effekt für Links */
+    background-color: #555;
+}
+
+/* Footer */
+footer {
+    background-color: #222;
+    color: white;
+    text-align: center;
+    padding: 1em 0;
+    position: relative;
+    bottom: 0;
+    width: 100%;
+}
+
+/* Box-Modell Beispiel für die Sektion */
+section {
+    padding: 20px;
+    margin-top: 20px;
+    background-color: #f4f4f4;
+}
