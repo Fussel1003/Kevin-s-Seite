@@ -3,7 +3,7 @@ name: Deploy React App to S3
 on:
   push:
     branches:
-      - main  # Der Workflow wird bei jedem Push auf den "main"-Branch ausgeführt
+      - main
 
 jobs:
   build:
@@ -47,3 +47,4 @@ jobs:
 
       - name: Deploy to S3
         run: aws s3 sync build/ s3://${{ secrets.S3_BUCKET_NAME }} --delete
+
